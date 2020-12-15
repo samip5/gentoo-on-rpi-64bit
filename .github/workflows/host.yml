@@ -18,10 +18,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: fetch
         run: |
-          wget http://lp-programming.com:8000/genpi64.img.zstd -O genpi64.img.zstd
+          wget https://genpi64.com/genpi64.img.zstd -O genpi64.img.zstd
 
     
       - uses: actions/upload-artifact@v2
         with:
           name: GenPi64
-          path: genpi64.img.std
+          path: genpi64.img.zstd
